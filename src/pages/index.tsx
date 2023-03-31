@@ -1,6 +1,6 @@
-import Features from '../components/features';
+// import Features from '../components/features';
 import Footer from '../components/footer';
-import FromTheBlog from '../components/fromTheBlog';
+// import FromTheBlog from '../components/fromTheBlog';
 
 export default function IndexPage() {
   return (
