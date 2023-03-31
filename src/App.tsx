@@ -1,12 +1,17 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import IndexPage from './pages';
+import BlogPost from './pages/blogPost';
 
 function App() {
   return (
-    <div>
-      <h1>Dark Throne Reborn</h1>
-      <p>WIP</p>
-      Version: {process.env.REACT_APP_BUILD_VERSION}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<IndexPage />} />
+        <Route path='/blog/:slug' element={<BlogPost />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
